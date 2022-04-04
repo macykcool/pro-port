@@ -6,6 +6,7 @@
 --gold: #bd9f4c;
 --link: #cc8358;
 --type: "Lucida Console", "Courier New", monospace;
+--dub: 20px;
 }
 
 * {
@@ -20,7 +21,7 @@ body {
 
 /* HEADER */
 header {
-    padding: 20px;
+    padding: var(--dub);
     font-family: var(--type);
     background-color: var(--green);
     color: #4d996c;
@@ -33,10 +34,10 @@ header h1 {
 
 header div {
     padding-top: 15px;
-    margin-right: 20px;
+    margin-right: var(--dub);
     float: right;
     font-family: var(--type);
-    font-size: 20px;
+    font-size: 24px;
 }
 
 header div ul {
@@ -75,8 +76,8 @@ p {
 
 /* ASIDE CONTAINS ABOUT ME */
 .about-me {
-    margin-right: 20px;
-    padding: 20px;
+    margin-right: var(--dub);
+    padding: var(--dub);
     clear: both;
     float: right;
     width: 20%;
@@ -106,11 +107,11 @@ p {
 .gallery {
     width: 75%;
     display: inline-block;
-    margin-left: 20px;
+    margin-left: var(--dub);
 }
 
 .projects {
-    margin-bottom: 20px;
+    margin-bottom: var(--dub);
     padding: 50px;
     height: 300px;
     font-family: var(--type);
@@ -123,13 +124,31 @@ p {
 }
 
 .projects h2 {
-    margin-bottom: 20px;
+    margin-bottom: var(--dub);
     font-size: 22px;
 }
 
 /* REFERRING TO THE 4 SMALL PROJECTS */
-.split-div {
-    float: left; width: 50%;
+.projects4 {
+    display: inline-block;
+}
+
+.projects2 {
+    margin-bottom: var(--dub);
+    padding: 50px;
+    height: 300px;
+    font-family: var(--type);
+    background-color: var(--gold);
+    color: var(--doorhinge);
+}
+
+.projects2 img {
+    max-height: 200px;
+}
+
+.projects2 h2 {
+    margin-bottom: var(--dub);
+    font-size: 22px;
 }
 
 /* FLOATS ARE REFERRING TO THE PROJECTS IMAGES */
@@ -142,10 +161,12 @@ p {
     float: right;
     margin-left: 25px;
 }
+
 /* END GALLERY */
 
 /* FOOTER CONATAINS CONTACT LINKS */
-.footer {
+
+footer {
     padding: 30px;
     clear: both;
     font-family: var(--type);
@@ -153,8 +174,21 @@ p {
     color: var(--link);
 }
 
-.footer h2 {
-    font-size: 20px;
-    color: var(--link);
+footer div {
+    padding-top: 15px;
+    margin-right: var(--dub);
+    float: center;
+    font-family: var(--type);
+    font-size: var(--dub);
 }
+
+footer div ul {
+    list-style-type: none;
+}
+
+footer div ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
 /* END FOOTER */
